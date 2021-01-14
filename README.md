@@ -24,7 +24,6 @@
         cout << "           EEEEEE  N    N     TT    OOOOOO  R    R  N    N  OOOOOO           " << endl;
         cout << "                                                                             " << endl;
         cout << "                                                                             " << endl;
-cout << "                                                                             " << endl;
         cout << "                                                                             " << endl;
         cout << "                              Integrantes:                                   " << endl;
         cout << "                                                                             " << endl;
