@@ -24,3 +24,20 @@
         cout << "           EEEEEE  N    N     TT    OOOOOO  R    R  N    N  OOOOOO           " << endl;
         cout << "                                                                             " << endl;
         cout << "                                                                             " << endl;
+cout << "                                                                             " << endl;
+        cout << "                                                                             " << endl;
+        cout << "                              Integrantes:                                   " << endl;
+        cout << "                                                                             " << endl;
+        cout << "                    Barragan Hernandez Rodrigo Iñaki.                        " << endl;
+        cout << "                    Flores Reyes Hanny Michelle.                             " << endl;
+        cout << "                    Gaona Cruz Hector Yael.                                  " << endl;
+        cout << "                    Martin del Campo Gomez María Fernanda.                   " << endl;
+        cout << "                    Peña Larraga Dulce Montserrath.                          " << endl;
+        cout << "                                                                             " << endl;
+        cout << "                                                                             " << endl;
+        cout << "                                 Tema:                                       " << endl;
+        cout << "                                                                             " << endl;
+        cout << "                       La Inteligencia Artificial                            " << endl;
+        cout << "                                                                             " << endl;
+        cout << "                                                                             " << endl;
+        cout << "                                                                             " << endl
