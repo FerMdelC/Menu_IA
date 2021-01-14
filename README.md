@@ -39,4 +39,6 @@
         cout << "                       La Inteligencia Artificial                            " << endl;
         cout << "                                                                             " << endl;
         cout << "                                                                             " << endl;
-        cout << "                                                                             " << endl
+        cout << "                                                                             " << endl;
+        
+        pon cualquier usuario y la clave es 123
