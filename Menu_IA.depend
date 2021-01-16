@@ -1,8 +1,9 @@
 # depslib dependency file v1.0
-1610600013 source:c:\users\choko\desarrollo\c++\menu_ia\main.cpp
+1610639006 source:c:\users\choko\desarrollo\c++\menu_ia\main.cpp
 	<iostream>
 	<conio.h>
 	<string.h>
 	<windows.h>
 	<stdlib.h>
+	<locale.h>
 

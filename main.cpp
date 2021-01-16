@@ -3,11 +3,13 @@
 #include <string.h>
 #include <windows.h>
 #include <stdlib.h>
+#include <locale.h>
 
 using namespace std;
 
 int main()
 {
+    setlocale (LC_CTYPE,"Spanish");
     string pass="", user;
     char ch;
     int i=0;
@@ -37,8 +39,6 @@ int main()
         cout << "           EEEEEE  N    N     TT    OOOOOO  R    R  N    N  OOOOOO           " << endl;
         cout << "                                                                             " << endl;
         cout << "                                                                             " << endl;
-        system("pause");
-        system("cls");
         cout << "                                                                             " << endl;
         cout << "                                                                             " << endl;
         cout << "                              Integrantes:                                   " << endl;
@@ -60,9 +60,9 @@ int main()
         cout << "                                                                             " << endl;
         system("pause");
         while (i<3){
-            cout<<"\nIngrese su nombre como usuario:";
+            cout<<"\nIngrese su nombre como usuario:"<<endl;
             cin>>user;
-            cout<<"\n\nIngrese su password: ";
+            cout<<"\n\nIngrese su password: "<<endl;
             ch=_getch();
 
             while(ch !=13){
@@ -91,15 +91,15 @@ int main()
                 while(continua){
 
                     system("cls");
-                    cout<<"\n\nBienvenido "<<user<<" acceso correcto\n\n";
-                    cout << "                         Menu pricipal                                    " << endl;
-                    cout<<"1-Importancia de la Inteligencia Artificial."<<endl;
-                    cout<<"2-¿Cómo se relaciona la Inteligencia Artificial con Entorno Socio Económico?" << endl;
-                    cout<<"3-Aportaciones de la Inteligencia Artificial en la economía del país."        << endl;
-                    cout<<"4-Aportaciones de la Inteligencia Artificial a la política del país."         << endl;
-                    cout<<"5-Aportaciones de la Inteligencia Artificial a la sociedad del país."         << endl;
-                    cout<<"6- Menu de videos"<< endl;
-                    cout<<"0- #### Salir de sistema. ####"<<endl;
+                    cout<<               "\n\nBienvenido "<<user<<" acceso correcto\n\n";
+                    cout << "                         Menú pricipal                                    " << endl<< endl;
+                    cout<<"(1) Importancia de la Inteligencia Artificial."                   <<endl<< endl;
+                    cout<<"(2  ¿Cómo se relaciona la Inteligencia Artificial con Entorno Socio Económico?" << endl<< endl;
+                    cout<<"(3) Aportaciones de la Inteligencia Artificial en la economía del país."     << endl<< endl;
+                    cout<<"(4) Aportaciones de la Inteligencia Artificial a la política del país."         << endl<<endl;
+                    cout<<"(5) Aportaciones de la Inteligencia Artificial a la sociedad del país."         << endl<< endl;
+                    cout<<"(6) Menú de videos"<< endl<< endl;
+                    cout<<"(0) Salir de sistema. "<<endl<< endl;
                     cout << "Ingrese una opción: ";
                     cin>> op;
                     if(cin.fail()){
@@ -114,6 +114,7 @@ int main()
                 switch(op) {
                 case 0: {salir = false; break;} // Sal del while
                 case 1:{
+                cout<<"Importancia de la Inteligencia Artificial."                   <<endl<< endl;
                 cout <<"Hoy en día, la cantidad de datos que se genera, tanto por parte de los humanos como por"<< endl;
                 cout<<"parte de las máquinas, supera en gran medida la capacidad que tienen las personas de absorber,"<< endl;
                 cout<<"interpretar y tomar decisiones complejas basadas en esos datos. La inteligencia artificial"<< endl;
@@ -146,7 +147,7 @@ int main()
                     system("pause");break;}
                 case 2:{
 
-                cout<<"¿Cómo se relaciona la Inteligencia Artificial con Entorno Socio Económico?"<<endl;
+                cout<<"¿Cómo se relaciona la Inteligencia Artificial con Entorno Socio Económico?"<<endl<<endl;
                 cout<<"La firma de investigación Markets and Markets estima que el mercado de la Inteligencia Artificial (IA)"<<endl;
                 cout<<"crecerá de 420 millones de dólares en 2014 a 5.050 millones de dólares en"<<endl;
                 cout<<"2020, gracias a la creciente adopción de tecnologías de “aprendizaje mecánico” (machine learning) y"<<endl;
@@ -176,7 +177,7 @@ int main()
                 case 3:{
 
 
-                cout<<"Aportaciones de la Inteligencia Artificial en la económia del país."<<endl;
+                cout<<"Aportaciones de la Inteligencia Artificial en la económia del país."<<endl<<endl;
                 cout<<"El impacto de la IA se manifiesta de varias maneras. Una de ellas es la capacidad que está"<<endl;
                 cout<<"demostrando para transformar la economía e impulsarla. De hecho, hay quien cree que, en la"<<endl;
                 cout<<"actualidad, la humanidad vive una nueva revolución industrial. Los cambios actuales son producto de la"<<endl;
@@ -205,7 +206,7 @@ int main()
                 system("pause");
                 break;}
                 case 4:{
-                cout<<"Aportaciones de la Inteligencia Artificial a la política del país"<<endl;
+                cout<<"Aportaciones de la Inteligencia Artificial a la política del país"<<endl<<endl;
                 cout<<"En el ámbito político se estudia la perspectiva de las personas empleando técnicas de inteligencia"<<endl;
                 cout<<"de vista y, de esta manera, obtener más seguidores para un determinado partido o candidato."<<endl;
                 cout<<"La inteligencia artificial es una de las herramientas más poderosas para que se persiga un enfoque de"<<endl;
@@ -221,7 +222,7 @@ int main()
                 system("pause");
                 break;}
                 case 5:{
-                cout<<"Aportaciones de la Inteligencia Artificial a la sociedad del país."<<endl;
+                cout<<"Aportaciones de la Inteligencia Artificial a la sociedad del país."<<endl<<endl;
                 cout<<"La IA puede mejorar drásticamente la eficiencia de nuestros centros de trabajo y hasta aumentar nuestra"<<endl;
                 cout<<"eficiencia. Al asumir tareas repetitivas o peligrosas, la IA libera fuerza laboral humana para hacer"<<endl;
                 cout<<"trabajos que impliquen cualidades inimitables como la creatividad, el ingenio o la empatía. Además de"<<endl;
@@ -253,14 +254,14 @@ int main()
                         while(continua){
                             system("cls");
                             cout <<"(1) Ver video ¿Qué es la inteligencia artificial?"<<endl<<endl<<endl;
-                            cout <<"(2) Ver video ¿Qué es INTELIGENCIA artificial y cómo FUNCIONA?"<<endl<<endl<<endl;
-                            cout <<"(0) Salir"<<endl<<endl<<endl;
+                            cout <<"(2) ¿Las máquinas pueden pensar?"<<endl<<endl<<endl;
+                            cout <<"(0) Volver al menu"<<endl<<endl<<endl;
                             cout << "Ingrese una opción: ";
                             cin>> opcions;
                             if(cin.fail()){
                                 cin.clear();
                                 cin.ignore();
-                                cout << "Opcion invalida" << endl;
+                                cout << "Opción invalida" << endl;
                                 system("pause");
                             }
                             else {continua = false;}
@@ -274,7 +275,7 @@ int main()
                                      linkChar="https://www.youtube.com/watch?v=NSf3o-wxtQ0";
                                      break;
                                  case 2:
-                                     linkChar="https://www.youtube.com/watch?v=xvEweQ1ABOE";
+                                     linkChar="https://www.youtube.com/watch?v=_peHYwe_784";
                                      break;
                                 default :
                                     cout<<"Opción invalida"<<endl<<endl<<endl;
@@ -293,7 +294,7 @@ int main()
         }
 
     }
-    cout<<"Muchas Gracias por usar nuestro programa, el equipo le agradece su participación"<<endl<<endl<<endl;
+    cout<<"Muchas gracias por usar nuestro programa, el equipo le agradece su participación"<<endl<<endl<<endl;
     system("pause");
     return 0;
  }
